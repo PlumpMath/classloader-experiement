@@ -48,7 +48,7 @@ public class Calling4 {
         System.out.println("In test function");
         System.out.println("ClassLoader in `test`" + this.getClass().getClassLoader());
         System.out.println("1: " +  this.getClass().getClassLoader().getParent());
-        System.out.println("1: " +  this.getClass().getClassLoader().getParent().getParent());
+      //  System.out.println("1: " +  this.getClass().getClassLoader().getParent());
 
 //
 //        Class Called = this.getClass().getClassLoader().loadClass("Called");
