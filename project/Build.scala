@@ -34,7 +34,8 @@ object ClassloaderExperiment extends Build {
     id = "calling", 
     base = file("calling"), 
     settings = sharedSettings ++ Seq(
-      name := "calling"
+      name := "calling",
+      libraryDependencies ++= Seq("org.apache.spark" %% "spark-assembly" % "0.9.2-hadoop2.0.5-alpha")
     )
   ) dependsOn called
 
